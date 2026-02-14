@@ -11,7 +11,7 @@ The project also includes building and deploying an interactive Streamlit web ap
 
 ------------------------------------------------------------
 
-b. Dataset Description (1 Mark)
+b. Dataset Description 
 
 Dataset Name: Breast Cancer Wisconsin Dataset  
 Source: UCI Machine Learning Repository  
@@ -29,7 +29,7 @@ Minimum Instance Size: 500
 
 ------------------------------------------------------------
 
-c. Models Used (6 Marks)
+c. Models Used 
 
 The following six classification models were implemented on the same dataset:
 
@@ -52,7 +52,7 @@ Matthews Correlation Coefficient (MCC Score)
 
 Model Comparison Table
 
-(Values extracted from saved_models/model_results.csv)
+
 
 
 ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC
@@ -67,7 +67,7 @@ XGBoost | 0.9561 | 0.951 | 0.9583 | 0.9718 | 0.965 | 0.9064
 
 ------------------------------------------------------------
 
-Observations on Model Performance (3 Marks)
+Observations on Model Performance 
 
 Logistic Regression:
 Shows strong overall performance with balanced precision and recall, indicating good linear separability.
@@ -89,7 +89,7 @@ Demonstrates strong predictive capability using gradient boosting.
 
 ------------------------------------------------------------
 
-Project Folder Structure (As Required in PDF)
+
 
 project-folder/
     app.py
@@ -109,7 +109,7 @@ project-folder/
 
 ------------------------------------------------------------
 
-Streamlit Application Features (4 Marks)
+Streamlit Application Features 
 
 Dataset upload option (CSV – test data only)  
 Model selection dropdown  
@@ -138,9 +138,5 @@ Deployment Instructions
 6. Select app.py  
 7. Click Deploy  
 
-------------------------------------------------------------
- 
-Live Streamlit app link  
-Screenshot of execution on BITS Virtual Lab  
-README content included in final PDF  
+
 
