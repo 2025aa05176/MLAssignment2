@@ -1,7 +1,7 @@
 
 # Machine Learning - Assignment 2
 
-Student Name: Sneha Singh  
+Name: Sneha Singh  
 BITS ID: 2025aa05176  
 Programme: M.Tech (AIML/DSE)  
 Course: Machine Learning  
