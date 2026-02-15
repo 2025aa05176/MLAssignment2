@@ -11,11 +11,11 @@ Course: Machine Learning
 University: Birla Institute of Technology and Science (BITS Pilani)
 
 
-**Live Deployment Links**
+
 **GitHub Repository**:
 https://github.com/2025aa05176/MLAssignment2
 
-**Live Streamlit Application:**
+**Streamlit Application:**
 https://mlassignment2-4utyr2xfr6k4io3sndvb8g.streamlit.app/
 
 
