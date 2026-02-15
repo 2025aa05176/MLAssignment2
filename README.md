@@ -1,142 +1,153 @@
+# Machine Learning - Assignment 2
 
-# ML Assignment 2 – Classification Models and Streamlit Deployment
+Student Name: Sneha Singh
+BITS ID: 2025AA05176
+Programme: M.Tech (AIML/DSE)
+Course: Machine Learning
+University: Birla Institute of Technology and Science (BITS Pilani)
 
-------------------------------------------------------------
 
-a. Problem Statement
+**Live Deployment Links**
+**GitHub Repository**:
+https://github.com/2025aa05176/MLAssignment2
 
-The objective of this assignment is to implement six different machine learning classification models 
-on a publicly available dataset and evaluate their performance using standard evaluation metrics. 
-The project also includes building and deploying an interactive Streamlit web application.
-
-------------------------------------------------------------
-
-b. Dataset Description 
-
-Dataset Name: Breast Cancer Wisconsin Dataset  
-Source: UCI Machine Learning Repository  
-Problem Type: Binary Classification  
-Number of Instances: 569  
-Number of Features: 30  
-
-Target Variable:
-0 – Malignant  
-1 – Benign  
-
-This dataset satisfies assignment constraints:
-Minimum Feature Size: 12  
-Minimum Instance Size: 500  
-
-------------------------------------------------------------
-
-c. Models Used 
-
-The following six classification models were implemented on the same dataset:
-
-1. Logistic Regression  
-2. Decision Tree Classifier  
-3. K-Nearest Neighbor Classifier  
-4. Naive Bayes (GaussianNB)  
-5. Random Forest (Ensemble Model)  
-6. XGBoost (Ensemble Model)  
-
-Evaluation Metrics Calculated:
-Accuracy  
-AUC Score  
-Precision  
-Recall  
-F1 Score  
-Matthews Correlation Coefficient (MCC Score)  
-
-------------------------------------------------------------
-
-Model Comparison Table
+**Live Streamlit Application:**
+https://mlassignment2-4utyr2xfr6k4io3sndvb8g.streamlit.app/
 
 
 
+------------------------------------------------------------------------
 
-ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC
--------------------------------------------------------------------
-Logistic Regression | 0.9737 | 0.9697 | 0.9722 | 0.9859 | 0.979 | 0.9439
-Decision Tree | 0.9474 | 0.944 | 0.9577 | 0.9577 | 0.9577 | 0.888
-KNN | 0.9474 | 0.944 | 0.9577 | 0.9577 | 0.9577 | 0.888
-Naive Bayes | 0.9649 | 0.9581 | 0.9589 | 0.9859 | 0.9722 | 0.9253
-Random Forest | 0.9649 | 0.9581 | 0.9589 | 0.9859 | 0.9722 | 0.9253
-XGBoost | 0.9561 | 0.951 | 0.9583 | 0.9718 | 0.965 | 0.9064
+## 1. Problem Statement
+
+Implement multiple classification models on a public dataset, evaluate
+them using standard evaluation metrics, and deploy an interactive
+Streamlit web application to demonstrate model selection and prediction.
+
+------------------------------------------------------------------------
+
+## 2. Dataset Description
+
+  Attribute             Details
+  --------------------- --------------------------------------
+  Dataset Name          Breast Cancer Wisconsin (Diagnostic)
+  Source                UCI Repository (via sklearn)
+  Total Instances       569
+  Total Features        30 Numerical Features
+  Classification Type   Binary Classification
+  Target Classes        Malignant / Benign
+
+The dataset satisfies the minimum requirement of at least 12 features
+and 500 instances.
+
+------------------------------------------------------------------------
+
+## 3. Models Used
+
+The following six classification models were implemented on the same
+dataset:
+
+1.  Logistic Regression\
+2.  Decision Tree Classifier\
+3.  K-Nearest Neighbor (kNN)\
+4.  Naive Bayes Classifier (Gaussian)\
+5.  Random Forest (Ensemble Model)\
+6.  XGBoost (Ensemble Model)
+
+------------------------------------------------------------------------
+
+## 4. Evaluation Metrics Used
+
+For each model, the following metrics were calculated:
+
+-   Accuracy\
+-   AUC Score\
+-   Precision\
+-   Recall\
+-   F1 Score\
+-   Matthews Correlation Coefficient (MCC)
+
+------------------------------------------------------------------------
+
+## 5. Model Performance Comparison
+
+  -------------------------------------------------------------------------------
+  ML Model Name     Accuracy    AUC      Precision    Recall    F1       MCC
+  ----------------- ----------- -------- ------------ --------- -------- --------
+  Logistic          0.9649      0.9954   0.9595       0.9861    0.9726   0.9120
+  Regression                                                             
+
+  Decision Tree     0.9123      0.9157   0.9559       0.9028    0.9286   0.8250
+
+  kNN               0.9123      0.9559   0.9429       0.9167    0.9296   0.8300
+
+  Naive Bayes       0.9737      0.9984   0.9595       1.0000    0.9793   0.9447
+
+  Random Forest     0.9649      0.9921   0.9589       0.9859    0.9722   0.9253
+  (Ensemble)                                                             
+
+  XGBoost           0.9561      0.9908   0.9583       0.9718    0.9650   0.9064
+  (Ensemble)                                                             
+  -------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## 6. Observations on Model Performance
+
+  -----------------------------------------------------------------------
+  ML Model Name        Observation about Model Performance
+  -------------------- --------------------------------------------------
+  Logistic Regression  Strong baseline model with excellent AUC and
+                       balanced precision-recall performance.
+
+  Decision Tree        Interpretable but slightly lower AUC; prone to
+                       overfitting and variance.
+
+  kNN                  High recall and competitive accuracy; sensitive to
+                       feature scaling.
+
+  Naive Bayes          Achieved highest overall performance with strong
+                       recall and F1 score.
+
+  Random Forest        More robust and stable compared to single Decision
+  (Ensemble)           Tree.
+
+  XGBoost (Ensemble)   Balanced performance across metrics with efficient
+                       boosting optimization.
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## 7. Streamlit Application Features
+
+The deployed Streamlit application includes:
+
+-   Dataset upload option (CSV)\
+-   Model selection dropdown\
+-   Display of evaluation metrics\
+-   Confusion matrix visualization\
+-   Classification report (tabular format)
+
+------------------------------------------------------------------------
+
+## 8. Project Repository Structure
+
+    project-folder/
+    │-- app.py
+    │-- requirements.txt
+    │-- README.md
+    │-- model/
+
+------------------------------------------------------------------------
 
 
-------------------------------------------------------------
+## Conclusion
 
-Observations on Model Performance 
+All six classification models were implemented and evaluated using
+standardized metrics.\
+Ensemble methods and Naive Bayes achieved strong overall performance,
+while Logistic Regression provided a reliable and interpretable
+baseline.
 
-Logistic Regression:
-Shows strong overall performance with balanced precision and recall, indicating good linear separability.
-
-Decision Tree:
-Provides good interpretability but may slightly overfit compared to ensemble methods.
-
-KNN:
-Performance improves significantly after feature scaling and depends on the choice of k.
-
-Naive Bayes:
-Computationally efficient and performs well despite independence assumptions.
-
-Random Forest:
-Reduces variance compared to a single tree and improves generalization.
-
-XGBoost:
-Demonstrates strong predictive capability using gradient boosting.
-
-------------------------------------------------------------
-
-
-
-project-folder/
-    app.py
-    requirements.txt
-    README.md
-    model/
-        train_models.py
-    saved_models/
-        Logistic Regression.pkl
-        Decision Tree.pkl
-        KNN.pkl
-        Naive Bayes.pkl
-        Random Forest.pkl
-        XGBoost.pkl
-        scaler.pkl
-        model_results.csv
-
-------------------------------------------------------------
-
-Streamlit Application Features 
-
-Dataset upload option (CSV – test data only)  
-Model selection dropdown  
-Display of evaluation metrics  
-Confusion matrix  
-Classification report  
-Download predictions as CSV  
-
-------------------------------------------------------------
-
-How to Run the Project
-
-1. pip install -r requirements.txt  
-2. python model/train_models.py  
-3. streamlit run app.py  
-
-------------------------------------------------------------
-
-Deployment Instructions
-
-1. Go to https://streamlit.io/cloud  
-2. Sign in using GitHub  
-3. Click New App  
-4. Select your repository  
-5. Choose branch main  
-6. Select app.py  
-7. Click Deploy  
-
-
-
+The project demonstrates end-to-end machine learning workflow including
+modeling, evaluation, and deployment using Streamlit.
