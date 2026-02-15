@@ -1,9 +1,13 @@
 # Machine Learning - Assignment 2
 
 Student Name: Sneha Singh
+
 BITS ID: 2025AA05176
+
 Programme: M.Tech (AIML/DSE)
+
 Course: Machine Learning
+
 University: Birla Institute of Technology and Science (BITS Pilani)
 
 
