@@ -51,11 +51,11 @@ and 500 instances.
 The following six classification models were implemented on the same
 dataset:
 
-1.  Logistic Regression\
-2.  Decision Tree Classifier\
-3.  K-Nearest Neighbor (kNN)\
-4.  Naive Bayes Classifier (Gaussian)\
-5.  Random Forest (Ensemble Model)\
+1.  Logistic Regression
+2.  Decision Tree Classifier
+3.  K-Nearest Neighbor (kNN)
+4.  Naive Bayes Classifier (Gaussian)
+5.  Random Forest (Ensemble Model)
 6.  XGBoost (Ensemble Model)
 
 ------------------------------------------------------------------------
@@ -64,11 +64,11 @@ dataset:
 
 For each model, the following metrics were calculated:
 
--   Accuracy\
--   AUC Score\
--   Precision\
--   Recall\
--   F1 Score\
+-   Accuracy
+-   AUC Score
+-   Precision
+-   Recall
+-   F1 Score
 -   Matthews Correlation Coefficient (MCC)
 
 ------------------------------------------------------------------------
